@@ -17,7 +17,7 @@ create_table () {
 }
 
 get_urls () {
-  cat $URLS
+  tail +2 $URLS
 }
 
 last_modified () {
@@ -35,11 +35,12 @@ check_if_url_changed () {
     INSERT INTO $CHECKS_TABLE_NAME
     (url, last_modified)
     VALUES ('$url', '$last_modified');
-  " | sqlite3 $DB 2>/dev/null &&
-    echo "$url"
+  " | sqlite3 $DB 2>/dev/null
 }
 
 create_table
-for url in $(get_urls); do
-  check_if_url_changed "$url"
+get_urls | while read line
+do
+  url=$(echo "$line" | cut -f 1)
+  check_if_url_changed "$url" && echo "$line"
 done

@@ -1,0 +1,2 @@
+url	loncolno	latcolno	augmentation
+https://s3.amazonaws.com/cartodb-cerberus-test/test.mini.csv	5	6	census
