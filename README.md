@@ -10,6 +10,6 @@ The only prerequisite is sqlite3.
 
 Put the urls you want to track in `urls.txt`.  Then run
 
-  ./cerberus.sh
+    ./cerberus.sh
 
 All urls that have changed since the last run will be echo'd to STDOUT.
