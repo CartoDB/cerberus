@@ -8,9 +8,13 @@ The only prerequisite is sqlite3.
 
 ### Usage
 
-Put the urls you want to track in `urls.txt`.  Then run
+Put the urls you want to track in the tab delimited file `urls.txt`.  Then run
 
     ./cerberus.sh
+
+The column order is as follows:
+
+    url	name	loncolno	latcolno	augmentation
 
 All urls that have changed since the last run will be echo'd to STDOUT.
 
