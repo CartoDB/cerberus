@@ -13,3 +13,18 @@ Put the urls you want to track in `urls.txt`.  Then run
     ./cerberus.sh
 
 All urls that have changed since the last run will be echo'd to STDOUT.
+
+If you want constant tracking, instead use:
+
+    ./watch.sh
+
+By default, polling of all URLs is done every second.  It can be changed with
+
+    ./watch.sh <seconds between polls>
+
+All URLs are polled, in order, sequentially.
+
+### Data
+
+All data is stored in sqlite in `db.sqlite`.  An entry is kept for each time a
+URL changes.
