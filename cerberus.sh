@@ -17,7 +17,7 @@ create_table () {
 }
 
 get_urls () {
-  tail +2 $URLS
+  tail -n +2 $URLS
 }
 
 last_modified () {
