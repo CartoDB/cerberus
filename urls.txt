@@ -1,2 +1,2 @@
 url	name	loncolno	latcolno	augmentation
-https://s3.amazonaws.com/cartodb-cerberus-test/test.mini.csv	minitest	5	6	censustracts
+https://s3.amazonaws.com/cartodb-cerberus-test/taxi.csv	taxi	5	6	censustracts
