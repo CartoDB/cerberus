@@ -1,2 +1,1 @@
-url	name	loncolno	latcolno	augmentation
-https://s3.amazonaws.com/cartodb-cerberus-test/taxi.csv	taxi	5	6	censustracts
+https://s3.amazonaws.com/cartodb-cerberus-test/taxi.csv https://github.com/CartoDB/crackedtiles/blob/augmentation-config/pgsample/load/taxis.json
